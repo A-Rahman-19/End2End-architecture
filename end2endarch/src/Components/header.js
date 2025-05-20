@@ -2,9 +2,27 @@ import '../Styles/header.css';
 
 function Header() {
     return (
-        <div className="header-container">
-            <h1>HeaderPart</h1>
-        </div>
+       <div className="nav">
+      <img
+          src={require("../assets/End2Endlogo.png")}
+          alt="Company logo"
+          className="header-logo"
+        />
+  <ul className="nav-as">
+    <li>
+      <a to="/skills" className="as skills-a">Home</a>
+    </li>
+    <li>
+      <a to="/contact" className="as contact-a">Architecteure</a>
+    </li>
+    <li>
+      <a to="/contact" className="as contact-a">Interior Desgin</a>
+    </li>
+    <li>
+      <a to="/contact" className="as contact-a">Portfolio</a>
+    </li>
+  </ul>
+</div>
     );
 }
 
