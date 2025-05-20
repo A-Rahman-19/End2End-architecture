@@ -62,4 +62,57 @@
   filter: blur(0.5px);
 }
 
+@media (min-width: 350px) and (max-width: 1000px) {
+  .portfolio-lnd-img {
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../assets/portfolio.png");
+  background-repeat: no-repeat;
+  background-size: 500%; /* fit without cropping */
+    background-position: center;
+     background-color: #000;
+}
 
+.portfolio-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+   .portfolio {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.portfolio-images {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  position:unset;
+  border-radius: 0px;
+}
+.portfolio-images:hover img {
+  transform:none;
+  filter:none;
+}
+.portfolio-images:not(:hover) {
+  filter: none;
+}
+.portfolio-images img {
+  width: 100%;
+  height: 100%;
+  transition:none;
+  filter: grayscale(0);
+}
+}
