@@ -4,6 +4,7 @@
   background-color: #2c3959;
   display: flex;
   position: relative;
+  padding-top: 10px;
 }
 .inner-container1 {
   width: 70%;
@@ -16,7 +17,7 @@
 }
 .footer-logo {
   position: absolute;
-  top: 25px;
+  top: 35px;
   left: 50px;
 }
 .policies {
