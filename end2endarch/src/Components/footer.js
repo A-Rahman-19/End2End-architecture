@@ -28,7 +28,10 @@ function Footer() {
         </div>
         <div className="contact">
           <h2>Eamil Address</h2>
-          <p>info@end2endarch.in</p>
+           <a href="mailto:info@end2endarch.com" className="email">
+              {" "}
+              info@end2endarch.in{" "}
+            </a>
         </div>
         </div>
          <div className="informations">

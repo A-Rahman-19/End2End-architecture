@@ -46,6 +46,10 @@
     color: #e7dcca;
   }
 }
+.email {
+  text-decoration: none;
+  color: #e7dcca;
+}
 .copyright {
   position: absolute;
   margin-bottom: 25px !important;

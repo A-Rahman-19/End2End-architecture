@@ -1,14 +1,11 @@
 import "../Styles/portfolio.css";
+import Header from "../Components/header"
 
 function Portfolio() {
   return (
     <div className="portfolio-container">
       <div className="portfolio-lnd-img">
-        <img
-          src={require("../assets/portfolio.png")}
-          alt="Portfolio landing image"
-          className="portfolio-img"
-        />
+        <Header/>
         <div className="portfolio-heading">
     OUR GALLERY
   </div>
