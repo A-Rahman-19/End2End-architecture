@@ -10,8 +10,8 @@ function Header() {
       />
       <ul className="nav-as">
         <li><a href="/" className="as skills-a">Home</a></li>
-        <li><a href="/architecture" className="as contact-a">Architecteure</a></li>
-        <li><a href="/interior-design" className="as contact-a">Interior Desgin</a></li>
+        <li><a href="/architecture" className="as contact-a">Architecture</a></li>
+        <li><a href="/interior-design" className="as contact-a">Interior Design</a></li>
         <li><a href="/portfolio" className="as contact-a">Portfolio</a></li>
       </ul>
     </div>
