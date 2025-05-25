@@ -29,3 +29,44 @@
     color: white
   }
 }
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+/* Responsive styles below 1024px */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 0 10px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  .nav ul {
+    position: absolute;
+    top: 70px; 
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 0 0 0 8px;
+    z-index: 999;
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+  .nav ul li {
+    margin: 10px 20px;
+  }
+}

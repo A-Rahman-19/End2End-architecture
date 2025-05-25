@@ -74,7 +74,7 @@ function Footer() {
               </a>
             </div>
             <p className="copyright">
-              © End to End Architecture | All Rights Reserved | Developed and managed by <a className="Brandore" style={{textDecoration: "none",color:"white"}} href="https://brandore.in/"> Brandore </a> 
+              © End to End Architecture | All Rights Reserved | Developed and managed by <a className="brandore" target="_blank" style={{textDecoration: "none",color:"white"}} href="https://brandore.in/"> Brandore </a> 
             </p>
           </div>
         </div>
