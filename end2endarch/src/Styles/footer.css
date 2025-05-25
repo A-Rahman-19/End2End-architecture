@@ -85,7 +85,7 @@
   p,a {
     margin: 0;
     font-size: 14px;
-    color: #e7dcca;
+    /* color: #e7dcca; */
   }
   .policies {
     display: flex;
