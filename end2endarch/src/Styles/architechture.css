@@ -1,0 +1,122 @@
+
+/* Top full-width image styling */
+.arch-lnd-img{
+    height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../assets/architecturepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.top-image {
+  width: 100%;
+  max-width: 2570px;
+  margin: 0 auto;
+  position:relative;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Section layout (Z pattern) */
+.section {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 40px 100px ;
+  gap: 100px;
+  background-color:#e7dcca;
+}
+
+/* Reverse layout for alternating Z-pattern */
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text and image blocks */
+.text-block,
+.image-block {
+  margin: 50px 0;
+  flex: 1 1 50%;
+}
+
+.text-block {
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.image-block img {
+  width: 100%;
+  max-height: 580px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* For medium screens: blockuce side padding */
+ @media (max-width: 1440px) {
+
+  .section {
+    padding: 30px 30px;
+  }
+  .text-block {
+    padding: 20px;
+    font-size: 1.3rem;
+    color: black;
+    text-align: left;
+  }
+} 
+
+/* For small screens: stack layout and scale text */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: row;
+    padding: 20px 10px;
+  }
+
+.image-block{
+    max-height: 400px;
+    max-height: 100%;
+  }
+
+  .text-block {
+    padding: 10px;
+    font-size: 1rem;
+    text-: center;
+    color: black;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-image {
+    max-width: 100%;
+  }
+
+  .image-block{
+    max-height: 300px;
+    max-height: 100%;
+  }
+  .section{
+    flex-direction: column;
+  }
+  .section.reverse{
+    flex-direction: column;
+  }
+  .text-block {
+    padding: 5px;
+    font-size: 0.5rem;
+    color: black;
+    text-align: left;
+  }
+}
