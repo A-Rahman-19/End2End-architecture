@@ -5,17 +5,18 @@ import Architecture4 from "../assets/Architecture4.jpg";
 import Architecture5 from "../assets/Architecture5.jpg";
 import Architecture6 from "../assets/Architecture6.jpg";
 import Architecture7 from "../assets/Architecture7.jpg";
-import "../Styles/architechture.css";
+import "../Styles/i nteriorDesign.css";
+
 import Header from "./header";
 
-function Architechture() {
+function InteriorDesign() {
   return (
     <>
       <div className="z-layout">
-      <div className="arch-lnd-img ">
+      <div className="interior-lnd-img ">
         <Header />
         <div className="home-content">
-          <h2>Architecture</h2>
+          <h2>Interior Design and architecture</h2>
           <p>
            Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -113,4 +114,4 @@ function Architechture() {
     </>
   );
 }
-export default Architechture;
+export default InteriorDesign;

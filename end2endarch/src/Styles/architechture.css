@@ -1,64 +1,16 @@
-.z-layout {
-  font-family: sans-serif;
-  max-width: 2570px;
-  margin: 0 auto;
-}
-
-.hero-container {
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
- 
-.header-element{
-  position:absolute;
-  top: 2%;
-  left: 0;
-  width: 100%;
-  padding: 5px;
-  font-weight: bold;
-  /* background: rgba(0, 0, 0, 0.4); */
-}
-
-.hero-text {
-  position: absolute;
-  top: 25%; /* Adjust to move vertically */
-  left: 0;
-  width: 50%; /* Wrap text at 50% of image width */
-  padding: 20px;
-  color:#E7DCCA;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  text-: left;
-  background: rgba(0, 0, 0, 0.4); /* optional for readability */
-}
-
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 1.0rem;
-    width: 70%;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text {
-    font-size: 0.3rem;
-    width: 80%;
-    padding: 8px;
-  }
-}
 
 /* Top full-width image styling */
+.arch-lnd-img{
+    height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../assets/architecturepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
 .top-image {
   width: 100%;
   max-width: 2570px;
@@ -78,10 +30,9 @@
   display: flex;
   flex-direction: row;
   text-align: left;
-  padding: 40px 40px ;
-  gap: 20px;
-  max-width: 2570px;
-  margin: 0 auto;
+  padding: 40px 100px ;
+  gap: 100px;
+  background-color:#e7dcca;
 }
 
 /* Reverse layout for alternating Z-pattern */
@@ -92,6 +43,7 @@
 /* Text and image blocks */
 .text-block,
 .image-block {
+  margin: 50px 0;
   flex: 1 1 50%;
 }
 
@@ -112,10 +64,7 @@
 /* Media Queries */
 
 /* For medium screens: blockuce side padding */
-/* @media (max-width: 1440px) {
-  .hero-image {
-    max-width: 100%;
-  }
+ @media (max-width: 1440px) {
 
   .section {
     padding: 30px 30px;
@@ -126,7 +75,7 @@
     color: black;
     text-align: left;
   }
-} */
+} 
 
 /* For small screens: stack layout and scale text */
 @media (max-width: 768px) {
