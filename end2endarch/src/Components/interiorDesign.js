@@ -5,7 +5,7 @@ import Architecture4 from "../assets/Architecture4.jpg";
 import Architecture5 from "../assets/Architecture5.jpg";
 import Architecture6 from "../assets/Architecture6.jpg";
 import Architecture7 from "../assets/Architecture7.jpg";
-import "../Styles/i nteriorDesign.css";
+import "../Styles/interiorDesign.css";
 
 import Header from "./header";
 
