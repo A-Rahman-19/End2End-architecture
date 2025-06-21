@@ -25,90 +25,35 @@ function InteriorDesign() {
         </div>
       </div>
 
-        <div className="section">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture2} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
-        <div className="section reverse">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture3} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
-        <div className="section">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture4} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
-        <div className="section reverse">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture5} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
-        <div className="section">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture6} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
-        <div className="section reverse">
-          <div className="text-block">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="image-block">
-            <img src={Architecture7} alt="Logo" className="responsive-img" />
-          </div>
-        </div>
+       
+        <div className="architecture-container">
+             <div className="architecture-text">
+               <p>
+                 Lorem Ipsum is simply dummy text of the printing and typesetting
+                 industry. Lorem Ipsum has been the industry's standard dummy text
+                 ever since the 1500s, Lorem Ipsum is simply dummy text of the
+                 printing and typesetting industry. Lorem Ipsum has been the
+                 industry's standard dummy text ever since the 1500s. Lorem Ipsum is
+                 simply dummy text of the printing and typesetting industry. Lorem
+                 Ipsum has been the industry's standard dummy text ever since the
+                 1500s, Lorem Ipsum is simply dummy text of the printing and
+                 typesetting industry. Lorem Ipsum has been the industry's standard
+                 dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of
+                 the printing and typesetting industry. Lorem Ipsum has been the
+                 industry's standard dummy text ever since the 1500s.
+               </p>
+             </div>
+             <div className="architecture-grid">
+               {[Architecture1, Architecture2, Architecture3, Architecture4, Architecture5, Architecture6].map((img, index) => (
+                 <div className="architecture-item" key={index}>
+                   <img src={img} alt="Architecture" />
+                   <div className="architecture-overlay">
+                     <h3>Interior Design</h3>
+                   </div>
+                 </div>
+               ))}
+             </div>
+           </div>
       </div>
       <div className="picture1"></div>
     </>
